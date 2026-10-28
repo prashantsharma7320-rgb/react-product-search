@@ -1,16 +1,92 @@
-# React + Vite
+🛍️ React Product Search App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive product search application built with React.js that allows users to search products in real time and view their prices. This project demonstrates React Hooks, array methods, and basic performance optimization using useMemo.
 
-Currently, two official plugins are available:
+🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+View Live Website
 
-## React Compiler
+✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* 🔍 Real-time product search
+* 📱 Responsive user interface
+* 💰 Product prices displayed in Indian Rupee (₹) format
+* 🛒 20 sample products
+* ⚡ Case-insensitive product filtering
+* 🔢 Interactive counter using useState
+* 🧠 useMemo to cache filtered results when dependencies remain unchanged
+* 🎨 Custom styling with CSS
 
-## Expanding the Oxlint configuration
+🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+* React.js
+* JavaScript (ES6+)
+* HTML5
+* CSS3
+* React Hooks: useState, useMemo
+* Vite
+* Git and GitHub
+* Vercel
+
+📸 How It Works
+
+1. Browse the available products and their sample prices.
+2. Enter a product name in the search box.
+3. View matching products instantly.
+4. Use the counter to demonstrate a component re-render without changing the search query.
+
+The filtered product list is memoized with useMemo, so the filtering calculation can be reused when its dependencies have not changed.
+
+💻 Run Locally
+
+Prerequisites
+
+* Node.js
+* npm
+
+Installation
+
+1. Clone the repository:
+
+git clone https://github.com/prashantsharma7320-rgb/react-product-search.git
+
+2. Open the project folder:
+
+cd react-product-search
+
+3. Install dependencies:
+
+npm install
+
+4. Start the development server:
+
+npm run dev
+
+5. Open the local URL shown in your terminal.
+
+💡 What I Learned
+
+* Managing component state with useState
+* Memoizing calculation results with useMemo
+* Filtering arrays using filter()
+* Rendering lists using map()
+* Handling controlled search inputs
+* Formatting prices using toLocaleString("en-IN")
+* Deploying a React application using Vercel
+* Managing source code with Git and GitHub
+
+📝 Note
+
+The product names and prices are sample data for learning and demonstration purposes. They are not live retail prices.
+
+👨‍💻 Author
+
+Prashant Sharma
+
+* GitHub: @prashantsharma7320-rgb
+* Project Repository: React Product Search
+* Live Demo: Product Search App
+
+⸻
+
+Built with ❤️ while learning React.js.
